@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks Calculator</title>
+</head>
+<body>
+    <h2>Enter Your Marks</h2>
+
+    <form method="POST">
+        Maths: <input type="text" name="maths"><br><br>
+        Chemistry: <input type="text" name="chemistry"><br><br>
+        Physics: <input type="text" name="physics"><br><br>
+        English: <input type="text" name="english"><br><br>
+
+        <button type="submit">Calculate Percentage</button>
+    </form>
+
+    {% if percentage is not none %}
+        <h3>Your Percentage: {{ percentage }}%</h3>
+    {% endif %}
+</body>
+</html>
